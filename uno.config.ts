@@ -1,7 +1,8 @@
-import { defineConfig, presetIcons, presetUno, presetWind, presetMini } from 'unocss'
+import { defineConfig, presetIcons, presetUno, presetWind } from 'unocss'
+import { presetExtra } from 'unocss-preset-extra'
 
 export default defineConfig({
-  presets: [presetUno(), presetWind(), presetIcons()],
+  presets: [presetUno(), presetWind(), presetIcons(), presetExtra()],
   shortcuts: [
     {
       'flex-center': 'flex justify-center items-center',
