@@ -38,7 +38,7 @@ function App() {
         <AlertDialogTrigger asChild>
           <Button variant="outline">Open</Button>
         </AlertDialogTrigger>
-        <AlertDialogContent>
+        <AlertDialogContent className='relative -top-25'>
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
