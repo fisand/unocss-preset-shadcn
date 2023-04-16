@@ -14,8 +14,8 @@ import { Button } from '@/components/ui/button'
 
 function App() {
   return (
-    <div className="App py-20 flex-col-center">
-      <Accordion type="single" collapsible className="w-[450px]">
+    <div className="App w-full py-20 flex-col-center overflow-hidden">
+      <Accordion type="single" collapsible className="w-90% max-w-450px">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
@@ -38,7 +38,7 @@ function App() {
         <AlertDialogTrigger asChild>
           <Button variant="outline">Open</Button>
         </AlertDialogTrigger>
-        <AlertDialogContent className='relative -top-25'>
+        <AlertDialogContent className='relative md:-top-25'>
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
