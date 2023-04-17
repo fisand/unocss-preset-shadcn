@@ -9,10 +9,10 @@ export function presetShadcn(options: PresetShadcnOptions = {}): Preset<Theme> {
     preflights: [
       {
         getCSS: () => `
-          @keyframes down {from{ height: 0 }to{ height: var(--radix-accordion-content-height)}}
-          @keyframes up {from{ height: var(--radix-accordion-content-height)}to{ height: 0 }}
-          @keyframes enter { from{ opacity: var(--un-enter-opacity, 1); transform: translate3d(var(--un-enter-translate-x, 0), var(--un-enter-translate-y, 0), 0) scale3d(var(--un-enter-scale, 1), var(--un-enter-scale, 1), var(--un-enter-scale, 1)) rotate(var(--un-enter-rotate, 0)) } }
-          @keyframes exit { to{ opacity: var(--un-exit-opacity, 1); transform: translate3d(var(--un-exit-translate-x, 0), var(--un-exit-translate-y, 0), 0) scale3d(var(--un-exit-scale, 1), var(--un-exit-scale, 1), var(--un-exit-scale, 1)) rotate(var(--un-exit-rotate, 0)) } }
+          @keyframes shadcn-down {from{ height: 0 }to{ height: var(--radix-accordion-content-height)}}
+          @keyframes shadcn-up {from{ height: var(--radix-accordion-content-height)}to{ height: 0 }}
+          @keyframes shadcn-enter { from{ opacity: var(--un-enter-opacity, 1); transform: translate3d(var(--un-enter-translate-x, 0), var(--un-enter-translate-y, 0), 0) scale3d(var(--un-enter-scale, 1), var(--un-enter-scale, 1), var(--un-enter-scale, 1)) rotate(var(--un-enter-rotate, 0)) } }
+          @keyframes shadcn-exit { to{ opacity: var(--un-exit-opacity, 1); transform: translate3d(var(--un-exit-translate-x, 0), var(--un-exit-translate-y, 0), 0) scale3d(var(--un-exit-scale, 1), var(--un-exit-scale, 1), var(--un-exit-scale, 1)) rotate(var(--un-exit-rotate, 0)) } }
         `,
       },
     ],
@@ -20,19 +20,19 @@ export function presetShadcn(options: PresetShadcnOptions = {}): Preset<Theme> {
       [
         'accordion-down',
         {
-          animation: 'down 0.2s ease-out',
+          animation: 'shadcn-down 0.2s ease-out',
         },
       ],
       [
         'accordion-up',
         {
-          animation: 'up 0.2s ease-out',
+          animation: 'shadcn-up 0.2s ease-out',
         },
       ],
       [
         'animate-in',
         {
-          'animation-name': 'enter',
+          'animation-name': 'shadcn-enter',
           'animation-duration': 'var(--un-animate-duration)',
           '--un-animate-duration': '150ms',
           '--un-enter-opacity': 'initial',
@@ -45,7 +45,7 @@ export function presetShadcn(options: PresetShadcnOptions = {}): Preset<Theme> {
       [
         'animate-out',
         {
-          'animation-name': 'exit',
+          'animation-name': 'shadcn-exit',
           'animation-duration': 'var(--un-animate-duration)',
           '--un-animate-duration': '150ms',
           '--un-exit-opacity': 'initial',
