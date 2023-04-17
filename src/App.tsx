@@ -11,10 +11,11 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
 import { Button } from '@/components/ui/button'
+import { Checkbox } from '@/components/ui/checkbox'
 
 function App() {
   return (
-    <div className="App w-full py-20 flex-col-center overflow-hidden">
+    <div className="App w-full py-20 flex-col-center gap-4 overflow-hidden">
       <Accordion type="single" collapsible className="w-90% max-w-450px">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -38,7 +39,7 @@ function App() {
         <AlertDialogTrigger asChild>
           <Button variant="outline">Open</Button>
         </AlertDialogTrigger>
-        <AlertDialogContent className='relative md:-top-25'>
+        <AlertDialogContent className="relative md:-top-25">
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
@@ -52,6 +53,16 @@ function App() {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+
+      <div className="flex items-center space-x-2">
+        <Checkbox defaultChecked id="terms" />
+        <label
+          htmlFor="terms"
+          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        >
+          Accept terms and conditions
+        </label>
+      </div>
     </div>
   )
 }
