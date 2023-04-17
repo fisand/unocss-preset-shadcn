@@ -58,7 +58,7 @@ function App() {
         <Checkbox defaultChecked id="terms" />
         <label
           htmlFor="terms"
-          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 select-none"
         >
           Accept terms and conditions
         </label>
