@@ -14,6 +14,10 @@ import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { ContextMenuDemo } from '@/examples/ContextMenu'
 import { DialogDemo } from './examples/Dialog'
+import { DropdownMenuDemo } from './examples/DropdownMenu'
+import { HoverCardDemo } from './examples/HoverCard'
+import { InputDemo } from './examples/Input'
+import { LabelDemo } from './examples/Label'
 
 function App() {
   return (
@@ -69,6 +73,14 @@ function App() {
       <ContextMenuDemo />
 
       <DialogDemo />
+
+      <LabelDemo />
+
+      <InputDemo />
+
+      <DropdownMenuDemo />
+
+      <HoverCardDemo />
     </div>
   )
 }
