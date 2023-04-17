@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@iconify-json/lucide': ^1.1.78
+  '@iconify-json/tabler': ^1.1.72
   '@radix-ui/react-accordion': ^1.1.0
   '@radix-ui/react-alert-dialog': ^1.0.2
   '@radix-ui/react-aspect-ratio': ^1.0.1
@@ -40,6 +41,7 @@ dependencies:
 
 devDependencies:
   '@iconify-json/lucide': 1.1.78
+  '@iconify-json/tabler': 1.1.72
   '@types/node': 18.14.1
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.10
@@ -531,6 +533,12 @@ packages:
 
   /@iconify-json/lucide/1.1.78:
     resolution: {integrity: sha512-GCYvjwjuFn456was5yztfqWKzUY+1+HkKktHjU5eByJOuTeUbDGePYn6ao2DxeRtY0vZzijA0uneWTB5/Xn0eg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/tabler/1.1.72:
+    resolution: {integrity: sha512-pOlgdfmyjPO9VkylpSw07M31U5XT2TIIZfk1QZo8G3I03MNZO9o8/ANMpLxnm6M2WdxVP8ho808vCj1nR3Nj1g==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
