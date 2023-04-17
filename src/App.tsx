@@ -13,6 +13,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { ContextMenuDemo } from '@/examples/ContextMenu'
+import { DialogDemo } from './examples/Dialog'
 
 function App() {
   return (
@@ -66,6 +67,8 @@ function App() {
       </div>
 
       <ContextMenuDemo />
+
+      <DialogDemo />
     </div>
   )
 }
