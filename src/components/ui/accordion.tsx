@@ -1,7 +1,7 @@
-import * as React from "react"
-import * as AccordionPrimitive from "@radix-ui/react-accordion"
+import * as React from 'react'
+import * as AccordionPrimitive from '@radix-ui/react-accordion'
 
-import { cn } from "@/lib/utils"
+import { cn } from '@/lib/utils'
 
 const Accordion = AccordionPrimitive.Root
 
@@ -9,16 +9,9 @@ const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item
-    ref={ref}
-    className={cn(
-      "border-b border-b-slate-200 dark:border-b-slate-700",
-      className
-    )}
-    {...props}
-  />
+  <AccordionPrimitive.Item ref={ref} className={cn('border-b', className)} {...props} />
 ))
-AccordionItem.displayName = "AccordionItem"
+AccordionItem.displayName = 'AccordionItem'
 
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
@@ -28,13 +21,13 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>span]:rotate-180",
+        'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>span]:rotate-180',
         className
       )}
       {...props}
     >
       {children}
-      <span className="i-lucide:chevron-down h-4 w-4 transition-transform duration-200" />
+      <span className="i-lucide:chevron-down flex h-4 w-4 transition-transform duration-200" />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ))
@@ -47,12 +40,12 @@ const AccordionContent = React.forwardRef<
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
-      "overflow-hidden text-sm transition-all data-[state=open]:accordion-down data-[state=closed]:accordion-up",
+      'overflow-hidden text-sm transition-all data-[state=closed]:accordion-up data-[state=open]:accordion-down',
       className
     )}
     {...props}
   >
-    <div className="pt-0 pb-4">{children}</div>
+    <div className="pb-4 pt-0">{children}</div>
   </AccordionPrimitive.Content>
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
