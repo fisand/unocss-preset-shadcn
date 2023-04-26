@@ -18,6 +18,18 @@ import { DropdownMenuDemo } from './examples/DropdownMenu'
 import { HoverCardDemo } from './examples/HoverCard'
 import { InputDemo } from './examples/Input'
 import { LabelDemo } from './examples/Label'
+import { MenubarDemo } from './examples/Menubar'
+import { PopoverDemo } from './examples/Popover'
+import { RadioGroupDemo } from './examples/RadioGroup'
+import { SelectDemo } from './examples/Select'
+import { SheetDemo } from './examples/Sheet'
+import { SliderDemo } from './examples/Slider'
+import { SwitchDemo } from './examples/Switch'
+import { TabsDemo } from './examples/Tabs'
+import { TextareaDemo } from './examples/Textarea'
+import { ToastDemo } from './examples/Toast'
+import { ToggleDemo } from './examples/Toggle'
+import { TooltipDemo } from './examples/Tooltip'
 
 function App() {
   return (
@@ -72,6 +84,8 @@ function App() {
 
       <ContextMenuDemo />
 
+      <SelectDemo />
+
       <DialogDemo />
 
       <LabelDemo />
@@ -81,6 +95,28 @@ function App() {
       <DropdownMenuDemo />
 
       <HoverCardDemo />
+
+      <MenubarDemo />
+
+      <PopoverDemo />
+
+      <RadioGroupDemo />
+
+      <SheetDemo />
+
+      <SliderDemo />
+
+      <SwitchDemo />
+
+      <TabsDemo />
+
+      <TextareaDemo />
+
+      <ToastDemo />
+
+      <ToggleDemo />
+
+      <TooltipDemo />
     </div>
   )
 }
