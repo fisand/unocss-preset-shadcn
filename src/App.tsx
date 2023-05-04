@@ -23,6 +23,7 @@ import { PopoverDemo } from './examples/Popover'
 import { RadioGroupDemo } from './examples/RadioGroup'
 import { SelectDemo } from './examples/Select'
 import { SheetDemo } from './examples/Sheet'
+import { SkeletonDemo } from './examples/Skeleton'
 import { SliderDemo } from './examples/Slider'
 import { SwitchDemo } from './examples/Switch'
 import { TabsDemo } from './examples/Tabs'
@@ -117,6 +118,8 @@ function App() {
       <ToggleDemo />
 
       <TooltipDemo />
+
+      <SkeletonDemo />
     </div>
   )
 }
