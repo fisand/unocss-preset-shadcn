@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "docs:dev": "astro dev --root docs"
+    "docs:dev": "astro dev --root docs",
+    "docs:build": "astro build --root docs"
   },
   "keywords": [],
   "author": "",
