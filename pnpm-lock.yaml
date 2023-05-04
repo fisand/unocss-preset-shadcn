@@ -73,9 +73,6 @@ dependencies:
   '@radix-ui/react-tooltip':
     specifier: ^1.0.5
     version: 1.0.5(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0)
-  '@unocss/reset':
-    specifier: ^0.50.0
-    version: 0.50.0
   class-variance-authority:
     specifier: ^0.4.0
     version: 0.4.0(typescript@4.9.5)
@@ -102,6 +99,9 @@ devDependencies:
   '@astrojs/react':
     specifier: ^2.1.2
     version: 2.1.2(@types/react-dom@18.0.10)(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0)
+  '@iconify-json/logos':
+    specifier: ^1.1.25
+    version: 1.1.25
   '@iconify-json/lucide':
     specifier: ^1.1.78
     version: 1.1.78
@@ -117,6 +117,9 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18.0.10
     version: 18.0.10
+  '@unocss/reset':
+    specifier: ^0.50.0
+    version: 0.50.0
   '@vitejs/plugin-react':
     specifier: ^4.0.0
     version: 4.0.0(vite@4.3.2)
@@ -794,6 +797,12 @@ packages:
     transitivePeerDependencies:
       - '@types/react'
     dev: false
+
+  /@iconify-json/logos@1.1.25:
+    resolution: {integrity: sha512-wmShOx+1Hg3ObawFzmE0C/T6R8m7okxQjjd6RCqjTAAC4ZfYNf3LuP/0XszTrIHnobS5kU6SoDCUKXIXWgr0aw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
 
   /@iconify-json/lucide@1.1.78:
     resolution: {integrity: sha512-GCYvjwjuFn456was5yztfqWKzUY+1+HkKktHjU5eByJOuTeUbDGePYn6ao2DxeRtY0vZzijA0uneWTB5/Xn0eg==}
@@ -2229,7 +2238,7 @@ packages:
 
   /@unocss/reset@0.50.0:
     resolution: {integrity: sha512-cU3YlVWvt9F1wW6X1/j5HXL/DQvod6bM+2sF7wvIuQyeLoiMM7z4Ne5VBwUX4Q0Tt9Chu295MqdQkK6elrDUYg==}
-    dev: false
+    dev: true
 
   /@unocss/reset@0.51.4:
     resolution: {integrity: sha512-3FnajZSOrQ4qSbpkY1IGRIFYw8I9E98SBXvjMnHqSl8k4YPbBP29W3YrgSVBMOnPNRL67hRcTaMF3nmbnBuWtQ==}
