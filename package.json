@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "docs:dev": " dev",
-    "docs:build": " build"
+    "docs:dev": "vite dev --config vite.doc.config.ts",
+    "docs:build": "vite build --config vite.doc.config.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "@iconify-json/logos": "^1.1.25",
     "@iconify-json/lucide": "^1.1.78",
     "@iconify-json/tabler": "^1.1.72",
+    "@mdx-js/rollup": "^2.3.0",
     "@types/node": "^18.14.1",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.3",
