@@ -6,9 +6,6 @@ import UnoCSS from 'unocss/astro'
 // https://astro.build/config
 export default defineConfig({
   root: './',
-  integrations: [
-    mdx(),
-    react(),
-    UnoCSS(),
-  ],
+  integrations: [mdx(), react(), UnoCSS()],
+  site: 'https://uno-shadcn-doc.vercel.app/',
 })

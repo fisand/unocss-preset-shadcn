@@ -126,6 +126,9 @@ devDependencies:
   astro:
     specifier: ^2.3.4
     version: 2.3.4(@types/node@18.14.1)
+  html-escaper:
+    specifier: ^3.0.3
+    version: 3.0.3
   typescript:
     specifier: ^4.9.5
     version: 4.9.5
