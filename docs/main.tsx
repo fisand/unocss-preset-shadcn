@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './index.mdx'
+import App from './App'
 
 import '@unocss/reset/antfu.css'
 import 'uno.css'

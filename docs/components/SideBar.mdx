@@ -1,0 +1,20 @@
+export const links = [
+  {
+    href: '/components/accordion',
+    text: 'Accordion',
+  },
+]
+
+<aside class="sticky top-14 left-0 h-[calc(100vh-3.5rem)] w-61 p-8 box-border overflow-y-auto b-r-1 b-r-solid b-r-border">
+  <h3 class="!mt-0 !mb-1 py-1 px-2 text-sm font-bold"> Components </h3>
+  {
+    links.map((link) => (
+      <a
+        href={link.href}
+        class={'block py-1 px-2 leading-5 text-sm'}
+      >
+        {link.text}
+      </a>
+    ))
+  }
+</aside>
