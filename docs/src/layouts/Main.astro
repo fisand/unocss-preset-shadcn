@@ -1,0 +1,20 @@
+---
+import Header from '../components/Header.astro'
+import SideBar from '../components/SideBar.astro'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <Header />
+    <div class="flex">
+      <SideBar />
+      <article class="flex-1 py-5 px-10">
+        <slot />
+      </article>
+    </div>
+  </body>
+</html>

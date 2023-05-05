@@ -1,1 +1,29 @@
-<aside class="sticky top-14 left-0 h-[calc(100vh-3.5rem)] w-61 overflow-y-auto b-r-1 b-r-solid b-r-border"></aside>
+---
+import { ScrollArea } from '../../../src/components/ui/scroll-area'
+
+const links = [
+  {
+    href: '/components/accordion',
+    text: 'Accordion',
+  },
+]
+---
+
+<aside
+  class="sticky top-14 left-0 h-[calc(100vh-3.5rem)] w-61 p-8 box-border overflow-y-auto b-r-1 b-r-solid b-r-border"
+>
+  <ScrollArea>
+    <h3 class="mb-1 py-1 px-2 text-sm font-bold">Components</h3>
+
+    {
+      links.map((link) => (
+        <a
+          href={link.href}
+          class={Astro.url.pathname === link.href ? 'block py-1 px-2 leading-5 text-sm bg-accent rounded-1' : 'block py-1 px-2 leading-5 text-sm'}
+        >
+          {link.text}
+        </a>
+      ))
+    }
+  </ScrollArea>
+</aside>
