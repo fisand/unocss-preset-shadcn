@@ -160,3 +160,11 @@ div[row=""] {
 div[block=""] {
   display: block;
 }
+
+
+.demo h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: unset;
+  font-size: unset;
+}
