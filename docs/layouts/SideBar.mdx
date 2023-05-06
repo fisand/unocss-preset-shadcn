@@ -1,0 +1,40 @@
+import { NavLink } from 'react-router-dom'
+
+export const links = [
+  {
+    href: '/components/accordion',
+    text: 'Accordion',
+  },
+]
+
+export const currentLink = () => {
+  return location.pathname
+}
+
+<aside class="sticky block top-14 left-0 h-[calc(100vh-3.5rem)] flex-shrink-0 w-61 p-8 box-border overflow-y-auto b-r-1 b-r-solid b-r-border">
+  <h3 class="!mt-0 !mb-1 py-1 px-2 text-sm font-bold"> Preset </h3>
+  <NavLink
+    to="/preset"
+    className={
+      currentLink() === '/preset'
+        ? 'block py-1 px-2 leading-5 text-sm !no-underline bg-muted rounded-1'
+        : 'block py-1 px-2 leading-5 text-sm hover:underline'
+    }
+  >
+    uno-preset-shadcn
+  </NavLink>
+
+  <h3 class="!mt-1 !mb-1 py-1 px-2 text-sm font-bold"> Components </h3>
+  {links.map((link) => (
+    <NavLink
+      to={link.href}
+      className={
+        currentLink() === link.href
+          ? 'block py-1 px-2 leading-5 text-sm !no-underline bg-muted rounded-1'
+          : 'block py-1 px-2 leading-5 text-sm hover:underline'
+      }
+    >
+      {link.text}
+    </NavLink>
+  ))}
+</aside>

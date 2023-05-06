@@ -1,8 +1,10 @@
-<div class="h-14 flex flex-row items-center justify-between lt-sm:px-4 sm:px-8 b-b-.5 b-b-solid b-b-border shadow-sm shadow-gray-200 text-base font-bold">
-  <a href="/" class="flex flex-row items-center gap-2 !hover:no-underline">
+import { NavLink } from 'react-router-dom'
+
+<div class="h-14 flex flex-row items-center justify-between sticky top-0 z-40 lt-sm:px-4 sm:px-8 b-b-1 b-b-solid b-b-border text-base font-bold bg-white">
+  <NavLink to="/" className="flex flex-row items-center gap-2 no-underline !hover:no-underline">
     <span class="i-tabler:circle-filled flex w-6.5 h-6.5 fill-primary !text-primary"></span>
     <span class="!text-primary !hover:no-underline">uno-shadcn/ui</span>
-  </a>
+  </NavLink>
   <span class="pr-2 flex items-center">
     <a href="https://github.com/fisand/uno-shadcn-ui" target="_blank" class="hover:bg-gray-100 p-1.25 rounded">
       <span class="i-logos:github-icon flex w-5.25 h-5.25 text-primary cursor-pointer"></span>
