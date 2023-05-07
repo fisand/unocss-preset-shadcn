@@ -9,20 +9,22 @@ export const toggleTheme = () => {
   }
 }
 
-<div class="h-14 flex flex-row items-center justify-between sticky top-0 z-40 lt-sm:px-4 sm:px-8 b-b-1 b-b-solid b-b-border text-base font-bold bg-background">
+<div className="h-14 flex flex-row items-center justify-between sticky top-0 z-40 lt-sm:px-4 sm:px-8 b-b-1 b-b-solid b-b-border text-base font-bold bg-background">
   <NavLink to="/" className="flex flex-row items-center gap-2 no-underline !hover:no-underline">
-    <span class="i-tabler:circle-filled flex w-6.5 h-6.5 fill-primary !text-primary"></span>
-    <span class="!text-primary !hover:no-underline">uno-shadcn/ui</span>
+    <span className="i-tabler:circle-filled flex w-6.5 h-6.5 fill-primary !text-primary"></span>
+    <span className="!text-primary !hover:no-underline">uno-shadcn/ui</span>
   </NavLink>
-  <span class="pr-2 flex items-center gap-2">
+  <span className="pr-2 flex items-center gap-2">
     <a
       href="https://github.com/fisand/uno-shadcn-ui"
       target="_blank"
-      class="hover:bg-gray-100 p-1.25 rounded dark:bg-gray-200 dark:hover:bg-gray-100"
+      className="p-1.25 rounded"
     >
-      <span class="i-logos:github-icon flex w-5.25 h-5.25 fill-primary !text-primary cursor-pointer"></span>
+      <span className="flex w-5.25 h-5.25 cursor-pointer hover:scale-97 dark:filter-invert i-logos:github-icon"></span>
     </a>
-    <span onClick={toggleTheme} class="i-lucide:sun w-5.25 h-5.25 hidden dark:flex"></span>
-    <span onClick={toggleTheme} class="i-lucide:moon flex w-5.25 h-5.25 dark:hidden"></span>
+    <span className="flex-col-center w-5.25 h-5.25 cursor-pointer">
+      <span onClick={toggleTheme} className="absolute flex w-5.25 h-5.25 transition-all scale-x-0 !dark:scale-x-100 i-lucide:sun"></span>
+      <span onClick={toggleTheme} className="absolute flex w-5.25 h-5.25 dark:scale-x-0 transition-all i-lucide:moon"></span>
+    </span>
   </span>
 </div>
