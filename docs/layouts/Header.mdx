@@ -20,11 +20,11 @@ export const toggleTheme = () => {
       target="_blank"
       className="p-1.25 rounded"
     >
-      <span className="flex w-5.25 h-5.25 cursor-pointer hover:scale-97 dark:filter-invert i-logos:github-icon"></span>
+      <span className="flex w-5 h-5 cursor-pointer hover:scale-97 dark:filter-invert i-logos:github-icon"></span>
     </a>
-    <span className="flex-col-center w-5.25 h-5.25 cursor-pointer">
-      <span onClick={toggleTheme} className="absolute flex w-5.25 h-5.25 transition-all scale-x-0 !dark:scale-x-100 i-lucide:sun"></span>
-      <span onClick={toggleTheme} className="absolute flex w-5.25 h-5.25 dark:scale-x-0 transition-all i-lucide:moon"></span>
+    <span className="relative flex-col-center w-5 h-5 cursor-pointer overflow-hidden">
+      <span onClick={toggleTheme} className="absolute flex w-5 h-5 transition-all opacity-0 translate-x-80% translate-y-120% !dark:opacity-100 !dark:translate-y-0 !dark:translate-x-0 i-lucide:sun"></span>
+      <span onClick={toggleTheme} className="absolute flex w-5 h-5 dark:translate-y-120% dark:-translate-x-80% dark:opacity-0 transition-all i-lucide:moon"></span>
     </span>
   </span>
 </div>
