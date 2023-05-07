@@ -11,7 +11,11 @@ export const currentLink = () => {
   return location.pathname
 }
 
-<aside className="sticky block top-14 left-0 h-[calc(100vh-3.5rem)] flex-shrink-0 w-61 lt-sm:w-50 p-8 py-4 lt-sm:px-4 box-border overflow-y-auto b-r-1 b-r-solid b-r-muted bg-background">
+<aside className="sticky lt-sm:fixed lt-sm:top-0 lt-sm:z-41 lt-sm:h-screen lt-sm:animate-in lt-sm:slide-in-from-left lt-sm:hidden block top-14 left-0 h-[calc(100vh-3.5rem)] flex-shrink-0 w-61 lt-sm:w-50 p-8 py-4 lt-sm:px-4 box-border overflow-y-auto b-r-1 b-r-solid b-r-muted bg-background">
+  <h2 className="flex items-center py-1 px-2 text-lg font-bold sm:hidden">
+    <span className="i-tabler:circle-filled flex w-5 h-5 fill-primary !text-primary"></span>
+    uno-shadcn-ui
+  </h2>
   <h3 className="!mt-0 !mb-1 py-1 px-2 font-bold"> Preset </h3>
   <NavLink
     to="/preset"

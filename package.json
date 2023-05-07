@@ -17,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@iconify-json/logos": "^1.1.25",
-    "@iconify-json/lucide": "^1.1.78",
+    "@iconify-json/lucide": "^1.1.88",
     "@iconify-json/tabler": "^1.1.72",
     "@mdx-js/rollup": "^2.3.0",
     "@types/node": "^18.14.1",

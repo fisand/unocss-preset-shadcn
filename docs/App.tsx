@@ -39,8 +39,22 @@ export default function App() {
             toggleClass()
           }, 2000)
         }
-      } else {
-        return false
+      }
+
+      // open sidebar
+      if (
+        e.target &&
+        (e.target as Element).tagName.toLowerCase() === 'span' &&
+        (e.target as Element).classList.contains('i-lucide:panel-left-open')
+      ) {
+        const aside = document.querySelector('aside')
+        aside?.classList.add('!block')
+        return
+      }
+
+      if (e.target) {
+        const aside = document.querySelector('aside')
+        aside?.classList.contains('!block') && aside?.classList.remove('!block')
       }
     }
     if (window) {
