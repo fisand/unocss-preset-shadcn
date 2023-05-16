@@ -24,6 +24,25 @@ export default defineConfig({
         rehypeHighlight,
         () => {
           return (tree) => {
+            visit(tree, 'text', (node, index, parent) => {
+              if (node.value.includes('[x]') && parent.tagName === 'li') {
+                node.value = node.value.replace('[x]', '')
+                parent.children = [
+                  {
+                    type: 'element',
+                    tagName: 'input',
+                    properties: {
+                      type: 'checkbox',
+                      disabled: true,
+                      checked: true,
+                      className: 'task-list-item-checkbox'
+                    }
+                  },
+                  ...parent.children
+                ]
+                parent.properties.className = ['task-list-item']
+              }
+            })
             visit(tree, 'element', (node) => {
               if (['pre'].includes(node.tagName)) {
                 const code = node.children.find((child) => child.tagName === 'code')
@@ -38,9 +57,11 @@ export default defineConfig({
                     type: 'element',
                     tagName: 'span',
                     properties: {
-                      className: ['shadcn-copy absolute right-4 inline-flex bg-gray-500 w-6 h-6 cursor-pointer i-tabler:copy'],
+                      className: [
+                        'shadcn-copy absolute right-4 inline-flex bg-gray-500 w-6 h-6 cursor-pointer i-tabler:copy',
+                      ],
                       dataCode: stringContent,
-                    }
+                    },
                   }
                 }
 
