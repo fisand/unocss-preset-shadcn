@@ -1,5 +1,5 @@
 {
-  "name": "fisand-shadcn-admin",
+  "name": "unocss-shadcn-preset",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -23,6 +23,7 @@
     "@types/node": "^18.14.1",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.3",
+    "@unocss/preset-mini": "^0.53.4",
     "@unocss/reset": "^0.50.0",
     "@vitejs/plugin-react": "^4.0.0",
     "hast-util-to-string": "^2.0.0",
