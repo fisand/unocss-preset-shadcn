@@ -1,4 +1,4 @@
-# unocss-shadcn-preset
+# unocss-preset-shadcn
 
 shadcn-ui but **unocss**
 
