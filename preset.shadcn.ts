@@ -1,8 +1,25 @@
-import { h } from '@unocss/preset-mini/utils'
-import type { Preset } from 'unocss'
+import { h, variantGetParameter } from '@unocss/preset-mini/utils'
+import type { Preset, VariantContext, VariantObject } from 'unocss'
 import type { PresetMiniOptions, Theme } from 'unocss/preset-mini'
 
 export interface PresetShadcnOptions extends PresetMiniOptions {}
+
+const variantGroupDataAttribute: VariantObject = {
+  name: 'group-data',
+  match(matcher, ctx: VariantContext<Theme>) {
+    const variant = variantGetParameter('group-data-', matcher, ctx.generator.config.separators)
+    if (variant) {
+      const [match, rest] = variant
+      const dataAttribute = h.bracket(match) ?? ctx.theme.data?.[match] ?? ''
+      if (dataAttribute) {
+        return {
+          matcher: rest,
+          selector: (s) => `.group[data-${dataAttribute}] ${s}`,
+        }
+      }
+    }
+  },
+}
 
 const handleMatchNumber = (v: string, defaultVal = '0') =>
   h.bracket.cssvar.global.auto.fraction.number(v || defaultVal)?.replace('%', '')
@@ -21,6 +38,7 @@ export function presetShadcn(options: PresetShadcnOptions = {}): Preset<Theme> {
         `,
       },
     ],
+    variants: [variantGroupDataAttribute.match],
     rules: [
       [
         'accordion-down',
