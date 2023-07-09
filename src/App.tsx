@@ -31,6 +31,7 @@ import { TextareaDemo } from './examples/Textarea'
 import { ToastDemo } from './examples/Toast'
 import { ToggleDemo } from './examples/Toggle'
 import { TooltipDemo } from './examples/Tooltip'
+import { NavigationMenuDemo } from './examples/NavigationMenu'
 
 function App() {
   return (
@@ -98,6 +99,8 @@ function App() {
       <HoverCardDemo />
 
       <MenubarDemo />
+
+      <NavigationMenuDemo />
 
       <PopoverDemo />
 
