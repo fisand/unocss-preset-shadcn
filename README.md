@@ -29,3 +29,6 @@ As a fan of [unocss](https://unocss.dev/) and [shadcn-ui](https://ui.shadcn.com/
 
 - [docs](https://uno-shadcn-doc.vercel.app/)
 - [demo](https://uno-shadcn.netlify.app/)
+
+## License
+MIT
