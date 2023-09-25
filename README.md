@@ -1,6 +1,6 @@
 # unocss-preset-shadcn
 
-shadcn-ui but **unocss**
+shadcn-ui but **unocss**, working with [shadcn-ui](https://ui.shadcn.com/) or [shadcn-vue](https://www.shadcn-vue.com/)
 
 ## Motivation
 
@@ -13,7 +13,24 @@ As a fan of [unocss](https://unocss.dev/) and [shadcn-ui](https://ui.shadcn.com/
 - [x] install `unocss`
 - [x] touch `uno.config.ts`. copy `preset.shadcn.ts` into your project from [here](https://github.com/fisand/uno-shadcn-ui/blob/main/preset.shadcn.ts), then add it into `uno.config.ts`.
 
+> If you use **shadcn-vue**, you add some fields in `uno.config.ts`
+
+```ts
+// uno.config.ts
+{
+  ...yourConfig,
+  shortcuts: [
+    {
+      'animate-accordion-up': 'accordion-up',
+      'animate-accordion-down': 'accordion-down',
+    },
+  ],
+  include: [/\.ts/, /\.vue$/, /\.vue\?vue/],
+}
+```
+
 ## Prepare to use shadcn-ui
+
 - [x] `pnpm add lucide-react class-variance-authority clsx tailwind-merge`
 - [x] copy [utils.ts](https://github.com/fisand/uno-shadcn-ui/blob/main/src/lib/utils.ts) into your project at `src/lib`
 - [x] `pnpx shadcn add`
@@ -24,6 +41,7 @@ As a fan of [unocss](https://unocss.dev/) and [shadcn-ui](https://ui.shadcn.com/
 - radix-ui
 - unocss
 - shadcn-ui
+- shadcn-vue
 
 ## Docs
 
@@ -31,4 +49,5 @@ As a fan of [unocss](https://unocss.dev/) and [shadcn-ui](https://ui.shadcn.com/
 - [demo](https://uno-shadcn.netlify.app/)
 
 ## License
+
 MIT
