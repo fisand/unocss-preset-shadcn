@@ -1,7 +1,7 @@
 <svg viewBox="0 0 220 220" fill="none"
   xmlns="http://www.w3.org/2000/svg">
-  <line x1="90" y1="60" x2="60" y2="90" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
-  <line x1="90" y1="10" x2="10" y2="90" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+  <line x1="90" y1="60" x2="60" y2="90" fill="none" stroke="#444444" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+  <line x1="90" y1="10" x2="10" y2="90" fill="none" stroke="#444444" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
   <path
     d="M117.444 167.888C117.444 140.273 139.83 117.888 167.444 117.888V117.888C195.058 117.888 217.444 140.273 217.444 167.888V167.888C217.444 195.502 195.058 217.888 167.444 217.888V217.888C139.83 217.888 117.444 195.502 117.444 167.888V167.888Z"
     fill="#858585"></path>
