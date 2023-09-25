@@ -13,6 +13,12 @@ export default defineConfig({
   plugins: [
     vue(),
     Unocss({
+      shortcuts: [
+        {
+          'animate-accordion-up': 'accordion-up',
+          'animate-accordion-down': 'accordion-down',
+        },
+      ],
       include: [/\.ts/, /\.vue$/, /\.vue\?vue/],
     }),
   ],

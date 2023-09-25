@@ -1,36 +1,23 @@
 <script setup lang="ts">
-import Button from './ui/button.vue'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion'
-import AlertDemo from './demo/alert-demo.vue'
-
-const defaultValue = 'item-1'
-
-const accordionItems = [
-  { value: 'item-1', title: 'Is it accessible?', content: 'Yes. It adheres to the WAI-ARIA design pattern.' },
-  {
-    value: 'item-2',
-    title: 'Is it unstyled?',
-    content: "Yes. It's unstyled by default, giving you freedom over the look and feel.",
-  },
-  {
-    value: 'item-3',
-    title: 'Can it be animated?',
-    content: 'Yes! You can use the transition prop to configure the animation.',
-  },
-]
+import ButtonDemo from './demo/ButtonDemo.vue'
+import AccordionDemo from './demo/AccordionDemo.vue'
+import AlertDemo from './demo/AlertDemo.vue'
+import AlertDialogDemo from './demo/AlertDialogDemo.vue'
+import AspectRatioDemo from './demo/AspectRatioDemo.vue';
+import AvatarDemo from './demo/AvatarDemo.vue';
+import BadgeDemo from './demo/BadgeDemo.vue';
+import CalendarDemo from './demo/CalendarDemo.vue';
 </script>
 
 <template>
-  <div class="pt-16 w-120 mx-auto">
-    <Button>Button</Button>
-    <Accordion type="single" class="w-full mt-4" collapsible :default-value="defaultValue">
-      <AccordionItem v-for="item in accordionItems" :key="item.value" :value="item.value">
-        <AccordionTrigger>{{ item.title }}</AccordionTrigger>
-        <AccordionContent>
-          {{ item.content }}
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-    <AlertDemo class="mt-4" />
+  <div class="py-16 w-120 lt-sm:w-full lt-sm:px-4 mx-auto space-y-3.5">
+    <AccordionDemo />
+    <AlertDemo class="" />
+    <AlertDialogDemo class="" />
+    <AspectRatioDemo />
+    <AvatarDemo />
+    <BadgeDemo class="flex max-w-min" />
+    <ButtonDemo />
+    <CalendarDemo />
   </div>
 </template>

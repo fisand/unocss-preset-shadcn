@@ -10,7 +10,7 @@ const props = defineProps<AccordionContentProps & { class?: string }>()
     v-bind="props"
     :class="
       cn(
-        'overflow-hidden text-sm data-[state=closed]:accordion-up data-[state=open]:accordion-down',
+        'overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down',
         props.class,
       )
     "
