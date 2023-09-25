@@ -4,7 +4,7 @@ import {
   type AccordionRootEmits,
   type AccordionRootProps,
 } from 'radix-vue'
-import { useEmitAsProps } from '../../lib/utils'
+import { useEmitAsProps } from '@/lib/utils'
 
 const props = defineProps<AccordionRootProps>()
 const emits = defineEmits<AccordionRootEmits>()

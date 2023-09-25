@@ -4,7 +4,7 @@ import {
   AccordionTrigger,
   type AccordionTriggerProps,
 } from 'radix-vue'
-import { cn } from '../../lib/utils'
+import { cn } from '@/lib/utils'
 
 const props = defineProps<AccordionTriggerProps & { class?: string }>()
 </script>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Button from './ui/button.vue'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion'
+import AlertDemo from './demo/alert-demo.vue'
 
 const defaultValue = 'item-1'
 
@@ -22,7 +23,7 @@ const accordionItems = [
 <template>
   <div class="pt-16 w-120 mx-auto">
     <Button>Button</Button>
-    <Accordion type="single" class="w-full" collapsible :default-value="defaultValue">
+    <Accordion type="single" class="w-full mt-4" collapsible :default-value="defaultValue">
       <AccordionItem v-for="item in accordionItems" :key="item.value" :value="item.value">
         <AccordionTrigger>{{ item.title }}</AccordionTrigger>
         <AccordionContent>
@@ -30,5 +31,6 @@ const accordionItems = [
         </AccordionContent>
       </AccordionItem>
     </Accordion>
+    <AlertDemo class="mt-4" />
   </div>
 </template>
