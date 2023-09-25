@@ -1,4 +1,7 @@
-# unocss-preset-shadcn
+<p align="center">
+  <img align="center" with="96" height="96" src="./public/logo.svg" />
+  <h1 align="center">unocss-preset-shadcn</h1>
+</p>
 
 shadcn-ui but **unocss**, working with [shadcn-ui](https://ui.shadcn.com/) or [shadcn-vue](https://www.shadcn-vue.com/)
 
