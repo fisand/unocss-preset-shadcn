@@ -16,7 +16,7 @@ As a fan of [unocss](https://unocss.dev/) and [shadcn-ui](https://ui.shadcn.com/
 - [x] install `unocss`
 - [x] touch `uno.config.ts`. copy `preset.shadcn.ts` into your project from [here](https://github.com/fisand/uno-shadcn-ui/blob/main/preset.shadcn.ts), then add it into `uno.config.ts`.
 
-> If you use **shadcn-vue**, you add some fields in `uno.config.ts`
+> If you use **shadcn-vue**, you should add some fields in `uno.config.ts`
 
 ```ts
 // uno.config.ts
