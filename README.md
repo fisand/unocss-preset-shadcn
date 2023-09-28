@@ -5,6 +5,11 @@
 
 shadcn-ui but **unocss**, working with [shadcn-ui](https://ui.shadcn.com/) or [shadcn-vue](https://www.shadcn-vue.com/)
 
+| lib | status |
+| ---- | ---- |
+| shadcn-ui | ✅ |
+| shadcn-vue | ✅ |
+
 ## Motivation
 
 As a fan of [unocss](https://unocss.dev/) and [shadcn-ui](https://ui.shadcn.com/), I wanted to combine them to take advantage of the speed and convenience that unocss brings. So I created this `unocss-preset`.
