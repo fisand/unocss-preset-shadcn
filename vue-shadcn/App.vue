@@ -6,7 +6,6 @@ import AlertDialogDemo from './demo/AlertDialogDemo.vue'
 import AspectRatioDemo from './demo/AspectRatioDemo.vue';
 import AvatarDemo from './demo/AvatarDemo.vue';
 import BadgeDemo from './demo/BadgeDemo.vue';
-import CalendarDemo from './demo/CalendarDemo.vue';
 </script>
 
 <template>
@@ -18,6 +17,5 @@ import CalendarDemo from './demo/CalendarDemo.vue';
     <AvatarDemo />
     <BadgeDemo class="flex max-w-min" />
     <ButtonDemo />
-    <CalendarDemo />
   </div>
 </template>
