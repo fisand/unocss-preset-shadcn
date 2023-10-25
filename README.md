@@ -16,6 +16,10 @@ As a fan of [unocss](https://unocss.dev/) and [shadcn-ui](https://ui.shadcn.com/
 
 ## Quick start
 
+**Notice**
+
+from `unocss@0.57.1` color vars should remove dots. Change `--background: 0,0%,100%;` to `--background: 0 0% 100%;`
+
 > Use the components codes in this project is **unnecessary**. These component codes are just for demonstration purposes. Just need `unocss` preset.
 
 - [x] install `unocss`
