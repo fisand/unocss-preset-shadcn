@@ -60,6 +60,11 @@ from `unocss@0.57.0` color vars should remove dots. Change `--background: 0,0%,1
 - [docs](https://uno-shadcn-doc.vercel.app/)
 - [demo](https://uno-shadcn.netlify.app/)
 
+## Project use `unocss-preset-shadcn`
+
+- react: [vite-wagmi-starter](https://github.com/fisand/vite-wagmi-starter)
+- vue: [gen-githubstyle-markdown](https://github.com/fisand/get-githubstyle-markdown)
+
 ## License
 
 MIT
