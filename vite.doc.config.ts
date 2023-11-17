@@ -21,7 +21,7 @@ export default defineConfig({
     Unocss(),
     mdx({
       rehypePlugins: [
-        rehypeHighlight,
+        rehypeHighlight as any,
         () => {
           return (tree) => {
             visit(tree, 'text', (node, index, parent) => {
