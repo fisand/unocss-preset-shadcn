@@ -64,6 +64,15 @@ export function presetShadcn(options: PresetShadcnOptions = {}): Preset<Theme> {
             --ring: 216 34% 17%;
             --radius: 0.5rem
           }
+
+          * {
+            border-color: hsl(var(--border));
+          }
+      
+          body {
+            color: hsl(var(--foreground));
+            background: hsl(var(--background));
+          }
         `,
       },
     ],
