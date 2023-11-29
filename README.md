@@ -46,7 +46,7 @@ from `unocss@0.57.0` color vars should remove dots. Change `--background: 0,0%,1
 
 - [x] `pnpm add lucide-react class-variance-authority clsx tailwind-merge`
 - [x] copy [utils.ts](https://github.com/fisand/uno-shadcn-ui/blob/main/src/lib/utils.ts) into your project at `src/lib`
-- [x] create [components.json](https://github.com/fisand/uno-shadcn-ui/blob/main/components.json) in your project root and modify as needed
+- [ ] create [components.json](https://github.com/fisand/uno-shadcn-ui/blob/main/components.json) in your project root and modify as needed
 - [x] `pnpm dlx shadcn-ui@latest add [component]`
 
 ## Base on
