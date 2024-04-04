@@ -16,11 +16,13 @@ As a fan of [unocss](https://unocss.dev/) and [shadcn-ui](https://ui.shadcn.com/
 
 ## Quick start
 
+**If you prefer to use npm module, check [hyoban/unocss-preset-shadcn](https://github.com/hyoban/unocss-preset-shadcn)**
+
 **❗️Notice**
 
 from `unocss@0.57.0` color vars should remove dots. Change `--background: 0,0%,100%;` to `--background: 0 0% 100%;` [issue](https://github.com/unocss/unocss/issues/3274)
 
-> Use the components codes in this project is **unnecessary**. These component codes are just for demonstration purposes. Just need `unocss` preset. If you prefer to use npm module, check [hyoban/unocss-preset-shadcn](https://github.com/hyoban/unocss-preset-shadcn)
+> Use the components codes in this project is **unnecessary**. These component codes are just for demonstration purposes. Just need `unocss` preset.
 
 - [x] install `unocss`
 - [x] touch `uno.config.ts`. copy `preset.shadcn.ts` into your project from [here](https://github.com/fisand/uno-shadcn-ui/blob/main/preset.shadcn.ts), then add it into `uno.config.ts`.
